@@ -1,59 +1,97 @@
-# AdrianaBorgesPortfolio
+# Adriana Borges | Portfólio Profissional
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.4.
+### Desenvolvedora de Software Sênior
 
-## Development server
+Portfólio profissional desenvolvido para apresentar minha trajetória, competências técnicas, conhecimento de negócio e experiências na construção, sustentação e modernização de sistemas corporativos.
 
-To start a local development server, run:
+Minha atuação conecta tecnologias consolidadas e arquiteturas modernas, com experiência em sistemas de missão crítica, integração de sistemas, modernização de aplicações legadas e desenvolvimento de soluções corporativas.
+
+---
+
+## 🌐 Portfólio Online
+
+### [Acessar meu Portfólio Profissional](https://adrianaborges.github.io/adriana-borges-portfolio/)
+
+---
+
+## 👩‍💻 Áreas de Atuação
+
+- Desenvolvimento de Software Sênior
+- Arquitetura de Software
+- Modernização de Sistemas Legados
+- Integração de Sistemas
+- APIs REST e Backend
+- Sistemas Corporativos de Missão Crítica
+- Otimização e Performance
+- Cloud e DevOps
+
+---
+
+## 🚀 Tecnologias
+
+**Backend & Arquitetura**
+
+`C#` `.NET` `ASP.NET Core` `REST APIs` `Microsserviços` `SOLID` `DDD`
+
+**Modernização & Legado**
+
+`PowerBuilder` `VB6` `VB.NET` `COM` `PFC` `DataWindow`
+
+**Frontend**
+
+`Angular` `TypeScript` `HTML` `SCSS`
+
+**Dados**
+
+`Oracle` `PL/SQL` `SQL Server` `Sybase` `MySQL` `MongoDB`
+
+**Cloud & DevOps**
+
+`AWS` `S3` `Docker` `Kubernetes` `Git` `GitHub Actions` `Azure DevOps` `CI/CD`
+
+**Integração**
+
+`REST` `S3 / MinIO` `RabbitMQ` `COM Interop`
+
+---
+
+## 💼 O que você encontrará neste portfólio
+
+O projeto apresenta alguns dos principais pilares da minha experiência profissional:
+
+- trajetória profissional e evolução tecnológica;
+- projetos e cases técnicos;
+- modernização de sistemas legados;
+- integração entre aplicações legadas e arquiteturas modernas;
+- otimização de processamento e performance;
+- arquitetura e processamento assíncrono;
+- experiência com PowerBuilder;
+- competências técnicas e conhecimento de negócio;
+- atuação nos segmentos de Seguros & Resseguros e Setor Público & Judiciário.
+
+---
+
+## 🛠️ Sobre este projeto
+
+Este portfólio também é um projeto de software.
+
+Foi desenvolvido utilizando:
+
+- Angular
+- TypeScript
+- HTML
+- SCSS
+- Git
+- GitHub Actions
+- GitHub Pages
+
+O processo de publicação é automatizado através de **CI/CD com GitHub Actions**, realizando o build da aplicação Angular e o deploy no GitHub Pages.
+
+---
+
+## ▶️ Executando localmente
+
+Clone o repositório:
 
 ```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+git clone https://github.com/AdrianaBorges/adriana-borges-portfolio.git
