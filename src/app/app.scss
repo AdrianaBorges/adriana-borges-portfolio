@@ -863,6 +863,261 @@ h2 {
 }
 
 /* =========================
+   CONHECIMENTO DE NEGÓCIO
+   ========================= */
+
+.business {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(124, 58, 237, 0.1),
+      transparent 30%
+    ),
+    linear-gradient(
+      180deg,
+      #111827 0%,
+      #0f172a 100%
+    );
+}
+
+.business-header {
+  max-width: 850px;
+}
+
+.business-header p {
+  max-width: 760px;
+  margin-top: 1.25rem;
+
+  color: #94a3b8;
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.business-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 1.5rem;
+
+  margin-top: 4rem;
+}
+
+.business-card {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 300px;
+
+  padding: 2rem;
+
+  border: 1px solid #334155;
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(30, 41, 59, 0.72),
+      rgba(15, 23, 42, 0.8)
+    );
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.business-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(139, 92, 246, 0.65);
+
+  box-shadow:
+    0 18px 45px rgba(2, 6, 23, 0.25),
+    0 0 0 1px rgba(139, 92, 246, 0.08);
+}
+
+/* Primeiro card ocupa a largura toda */
+
+.business-card-featured {
+  grid-column: 1 / -1;
+
+  min-height: 340px;
+
+  border-color: rgba(139, 92, 246, 0.55);
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(124, 58, 237, 0.16),
+      transparent 34%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(30, 41, 59, 0.78),
+      rgba(15, 23, 42, 0.9)
+    );
+}
+
+.business-card-featured::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #7c3aed,
+      #a78bfa,
+      transparent
+    );
+}
+
+.business-number {
+  position: absolute;
+
+  top: 1.2rem;
+  right: 1.5rem;
+
+  color: rgba(148, 163, 184, 0.15);
+
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.business-card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.business-label {
+  display: block;
+
+  margin-bottom: 0.75rem;
+
+  color: #a78bfa;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.business-card h3 {
+  margin: 0;
+
+  color: #f8fafc;
+
+  font-size: 1.55rem;
+  line-height: 1.35;
+}
+
+.business-card p {
+  max-width: 850px;
+
+  margin-top: 1.25rem;
+
+  color: #94a3b8;
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.business-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.65rem;
+
+  margin-top: 1.75rem;
+}
+
+.business-tags span {
+  padding: 0.45rem 0.75rem;
+
+  border: 1px solid rgba(71, 85, 105, 0.75);
+  border-radius: 8px;
+
+  background: rgba(15, 23, 42, 0.68);
+
+  color: #cbd5e1;
+
+  font-size: 0.85rem;
+
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.business-tags span:hover {
+  border-color: #8b5cf6;
+
+  color: #ddd6fe;
+
+  background: rgba(124, 58, 237, 0.1);
+}
+
+
+/* =====================================================
+   EXPERIÊNCIA NO SEGMENTO
+   Empresas apresentadas como trajetória profissional,
+   sem confundir com as tags de competências.
+   ===================================================== */
+
+.business-reference {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.business-reference-label {
+  display: block;
+  margin-bottom: 0.8rem;
+
+  color: #a78bfa;
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.business-companies {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.business-companies span {
+  padding: 0.45rem 0.8rem;
+
+  border: 1px solid rgba(139, 92, 246, 0.28);
+  border-radius: 999px;
+
+  background: rgba(124, 58, 237, 0.07);
+
+  color: #cbd5e1;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.business-companies span:hover {
+  border-color: rgba(167, 139, 250, 0.55);
+  background: rgba(124, 58, 237, 0.12);
+}
+
+
+/* =========================
    RESPONSIVIDADE
    ========================= */
 
@@ -963,4 +1218,33 @@ h2 {
   .skill-number {
     font-size: 2.5rem;
   }
+
+  .business-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .business-card-featured {
+    grid-column: auto;
+  }
+
+  .business-card {
+    min-height: auto;
+    padding: 1.5rem;
+  }
+
+  .business-number {
+    font-size: 2.5rem;
+  }
+
+  .business-reference {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+  }
+
+  .business-companies {
+    gap: 0.5rem;
+  }
+
+
+
 }
