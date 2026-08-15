@@ -71,11 +71,11 @@
 
 .hero {
   min-height: 100vh;
-
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
-  padding: 4rem 8%;
+  padding: 14rem 8% 5rem;
+  box-sizing: border-box;
 }
 
 .hero-content {
@@ -1116,6 +1116,184 @@ h2 {
   background: rgba(124, 58, 237, 0.12);
 }
 
+/* =========================
+   CONTATO
+   ========================= */
+
+.contact {
+  background:
+    radial-gradient(
+      circle at bottom left,
+      rgba(124, 58, 237, 0.14),
+      transparent 32%
+    ),
+    linear-gradient(
+      180deg,
+      #0f172a 0%,
+      #111827 100%
+    );
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+
+  gap: 4rem;
+
+  align-items: center;
+}
+
+.contact-main {
+  max-width: 850px;
+}
+
+.contact-label {
+  display: block;
+
+  margin-bottom: 1rem;
+
+  color: #a78bfa;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contact-main h2 {
+  margin: 0;
+
+  color: #f8fafc;
+
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  line-height: 1.15;
+}
+
+.contact-main p {
+  max-width: 720px;
+
+  margin-top: 1.5rem;
+
+  color: #94a3b8;
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+
+  margin-top: 2.5rem;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 46px;
+
+  padding: 0.8rem 1.2rem;
+
+  border: 1px solid #475569;
+  border-radius: 9px;
+
+  color: #e2e8f0;
+
+  font-weight: 600;
+  text-decoration: none;
+
+  background: rgba(15, 23, 42, 0.4);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.contact-link:hover {
+  transform: translateY(-2px);
+
+  border-color: #8b5cf6;
+
+  background: rgba(124, 58, 237, 0.12);
+}
+
+/* Card lateral */
+
+.contact-card {
+  padding: 2rem;
+
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(30, 41, 59, 0.75),
+      rgba(15, 23, 42, 0.82)
+    );
+}
+
+.contact-card-label {
+  display: block;
+
+  margin-bottom: 1.25rem;
+
+  color: #a78bfa;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contact-topics {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.7rem;
+}
+
+.contact-topics span {
+  padding: 0.5rem 0.8rem;
+
+  border: 1px solid #334155;
+  border-radius: 999px;
+
+  color: #cbd5e1;
+
+  font-size: 0.85rem;
+
+  background: rgba(15, 23, 42, 0.65);
+}
+
+/* =========================
+   RODAPÉ
+   ========================= */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  padding: 1.5rem 8%;
+
+  border-top: 1px solid #1e293b;
+
+  background: #0f172a;
+
+  color: #64748b;
+
+  font-size: 0.85rem;
+}
 
 /* =========================
    RESPONSIVIDADE
@@ -1245,6 +1423,25 @@ h2 {
     gap: 0.5rem;
   }
 
+  .contact-grid {
+  grid-template-columns: 1fr;
 
+  gap: 2.5rem;
+}
+
+.contact-links {
+  flex-direction: column;
+}
+
+.contact-link {
+  width: 100%;
+}
+
+.footer {
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 1.5rem;
+}
 
 }
